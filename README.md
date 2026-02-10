@@ -1,6 +1,6 @@
 <h1 align="center">Todo-list API ✌️</h1>
 
-<p align="center">This project has been created by Nodejs , ExpressJs and Mongodb</p>
+<p align="center">NodeJS , ExpressJS and MongoDB</p>
 
 ###
 
@@ -17,23 +17,55 @@
 <a href="https://todo-list-api-666z.onrender.com/api/todos/" alt="Postman"><img src="https://github.com/ArefShojaei/todo-list-api/assets/134844185/cf8f495d-bd9d-4121-a132-166472624397" /></a>
 
 
+<h2 align="left">How to use it?</h2>
 
+> First step:
+
+Install all package dependencies from NPM
+```bash
+npm install
+```
+
+> Second step:
+
+After installing packages, then create ".env" file in root of the project and add these variables
+```bash
+APP_PORT = 3000
+MONGODB_URL = mongodb://127.0.0.1:27017/database_name
+```
+###
+###
 ###
 
-<h2 align="left">How to use it ?</h2>
+<h2 align="left">API End-points + HTTP methods</h2>
 
 ###
+> Create new Todo
+```txt
+[POST] /api/todos
+```
 
-<p align="left">1️⃣ npm install<br>2️⃣ create .env file + adding variables<br>3️⃣ npm start<br>4️⃣ use it with routing system like "/api/todos/" + "Request Methods"</p>
+> Get all Todos
+```txt
+[GET] /api/todos
+```
 
-###
-###
-###
+> Get Todo by ID
+```txt
+[GET] /api/todos/:id
+```
 
-<h2 align="left">API End Points + Methods</h2>
+> Update Todo by ID
+```txt
+[PATCH] /api/todos/:id
+```
 
-###
+> Delete Todo by ID
+```txt
+[DELETE] /api/todos/:id
+```
 
-<p align="left">🔗 { POST } -- "/api/todos/" -- { Create new todo }<br><br>🔗 { GET } -- "/api/todos/" --  { Get all todos }<br><br>🔗 { GET } -- "/api/todos/:id"  --  { Get todo by ID }<br><br>🔗 { PATCH } -- "/api/todos/:id" --  { Update todo by ID }  <br><br>🔗 { DELETE } -- "/api/todos/" --  { Delete all todos }<br><br>🔗 { DELETE } -- "/api/todos/:id"  --  { Delete todo by ID }</p>
-
-###
+> Delete all Todos
+```txt
+[DELETE] /api/todos
+```
